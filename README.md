@@ -41,7 +41,7 @@ The dataset is treated as an **external system**. No assumptions are made about 
 ```text
 .
 ├── data/
-│   ├── raw/          # Extracted data with minimal intervention
+│   ├── raw/          # Origina data
 │   └── processed/    # Cleaned and standardized analytical layer
 │
 ├── src/
@@ -59,13 +59,6 @@ The dataset is treated as an **external system**. No assumptions are made about 
 ## Data layers
 
 The project follows a layered data architecture:
-
-### Raw layer
-
-* First persisted state after extraction
-* Preserves original structure and semantics
-* Allows missing values, inconsistencies, and duplicates
-* No business logic or semantic corrections applied
 
 ### Processed layer
 
@@ -90,8 +83,10 @@ This repository documents why decisions were made, not only how.
 ## Current Status
 * ☑️ Dataset exploration
 * ☑️ ETL design and documentation
-* ⬜ Extraction implementation
+* ☑️ Extraction implementation
 * ⬜ Transformation logic
+* ⬜ Database desing
+* ⬜ Load Step
 * ⬜ Analytical exploration
 * ⬜ Modeling (optional)
 

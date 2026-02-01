@@ -1,5 +1,8 @@
 # ETL
 
+## ETL vs ELT
+ETL was used due of...
+
 ### Scope and intent
 This document describes the **ETL decisions**, assumptions, and trade-offs for the Supply Chain Risk project. It is not a tutorial and does not document code line by line. The goal is to make explicit why certain choices were made and **what their implications are** for downstream analysis and decision-making.
 
@@ -40,15 +43,23 @@ The following columns are removed because they do not contribute to analytical d
 * `Product Description`
 * `Customer Email`
 * `Customer Password`
+* `Category Id`
 * `Customer Fname`
 * `Customer Lname`
-* `Customer Id`
 * `Customer Street`
+* `Type`
+* `Customer Zipcode`
+* `Order Zipcode`
+* `Latitude`
+* `Longitude`
 
 ### Rationale
 * Image and free-text description fields are not used in quantitative analysis.
 * Personally identifiable information (PII) is explicitly excluded to avoid misuse and reduce risk.
 * Customer identity is not required at this stage; analysis is performed at an operational and logistical level, not at an individual level.
+
+### Columns Renames
+
 
 ### Explicit non-goals
 
